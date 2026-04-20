@@ -35,7 +35,6 @@ std::string playerName;
 // Int
 
 // Bools
-bool followedtom = false;
 
 
 int main() {
@@ -58,6 +57,8 @@ int main() {
         std::cout << "T: Your relationship with Tom is now " << t.relationship << ".\n" << std::endl;
         std::this_thread::sleep_for(std::chrono::seconds(2));
         system("clear");
+        secondscene();
+
     }
     if (followTom == "no") {
         std::cout << playerName << ": Nah, I think I'll explore on my own.\n" << std::endl;
@@ -68,9 +69,17 @@ int main() {
         std::cout << "T: Your relationship with Tom is now " << t.relationship << ".\n" << std::endl;
         std::this_thread::sleep_for(std::chrono::seconds(2));
         system("clear");
+        secondscene();
     }  else {
         std::cout << "Put a valid command and make sure it is lowercase!" << std::endl;
     }
 
+    if followed
+
     return 0;
+}
+
+
+int secondscene() {
+
 }
