@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <chrono>
 #include <thread>
-#include "container.h"
+// Get container, but there is none so do it at home.
 
 // Player Class
 class Player {
