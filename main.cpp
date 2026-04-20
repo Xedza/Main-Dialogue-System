@@ -10,7 +10,6 @@ class Player {
     public:
         int health = 100;
         int stamina = 100;
-        bool gender = false;
 };
 
 
@@ -36,6 +35,7 @@ std::string playerName;
 // Int
 
 // Bools
+bool followedtom = false;
 
 
 int main() {
