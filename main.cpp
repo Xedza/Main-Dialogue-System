@@ -36,19 +36,6 @@ std::string playerName;
 
 // Bools
 
-// Say command
-void say(const std::string& name, const std::string& msg) {
-    std::cout << name << ": \"" << msg << "\"\n";
-}
-
-int main() {
-    std::string name = "Player";
-
-    say(name, "What's up!");
-
-    return 0;
-}
-
 
 int main() {
     system("clear");
@@ -70,8 +57,19 @@ int main() {
         std::cout << "T: Your relationship with Tom is now " << t.relationship << ".\n" << std::endl;
         std::this_thread::sleep_for(std::chrono::seconds(2));
         system("clear");
-        secondscene();
-
+        std::this_thread::sleep_for(std::chrono::seconds(2));
+        std::cout << "< - Field - >\n";
+        std::cout << "\n"; 
+        std::cout << "\n";
+        std::cout << "*After a bit we decided to end at the field.\n*";
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "Tom: Welp that was basically it! This is the park.\n";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::cout << playerName << ": Thanks man! I appreciate it. I think I'm going to go in now. Class starts soon.\n";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::cout << "Tom: Alright, see ya!\n";
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        system("clear");
     }
     if (followTom == "no") {
         std::cout << playerName << ": Nah, I think I'll explore on my own.\n" << std::endl;
@@ -82,17 +80,9 @@ int main() {
         std::cout << "T: Your relationship with Tom is now " << t.relationship << ".\n" << std::endl;
         std::this_thread::sleep_for(std::chrono::seconds(2));
         system("clear");
-        secondscene();
-    }  elseif {
-        std::cout << "Put a valid command and make sure it is lowercase!" << std::endl;
     }
-
-    if followed
-
+    
+    
     return 0;
 }
 
-
-int secondscene() {
-    
-}
