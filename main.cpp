@@ -61,7 +61,7 @@ int main() {
         std::cout << "< - Field - >\n";
         std::cout << "\n"; 
         std::cout << "\n";
-        std::cout << "*After a bit we decided to end at the field.\n*";
+        std::cout << "*After a bit we decided to end at the field.*\n";
         std::this_thread::sleep_for(std::chrono::seconds(3));
         std::cout << "Tom: Welp that was basically it! This is the park.\n";
         std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -82,6 +82,10 @@ int main() {
         system("clear");
     }
     
+    std::cout << "< - Hallway - >";
+    std::cout << "\n";
+    std::cout << "\n";
+    std::cout << playerName;
     
     return 0;
 }
