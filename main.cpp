@@ -36,6 +36,19 @@ std::string playerName;
 
 // Bools
 
+// Say command
+void say(const std::string& name, const std::string& msg) {
+    std::cout << name << ": \"" << msg << "\"\n";
+}
+
+int main() {
+    std::string name = "Player";
+
+    say(name, "What's up!");
+
+    return 0;
+}
+
 
 int main() {
     system("clear");
@@ -70,7 +83,7 @@ int main() {
         std::this_thread::sleep_for(std::chrono::seconds(2));
         system("clear");
         secondscene();
-    }  else {
+    }  elseif {
         std::cout << "Put a valid command and make sure it is lowercase!" << std::endl;
     }
 
@@ -81,5 +94,5 @@ int main() {
 
 
 int secondscene() {
-
+    
 }
