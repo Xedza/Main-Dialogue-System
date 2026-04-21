@@ -8,8 +8,7 @@
 // Player Class
 class Player {
     public:
-        int health = 100;
-        int stamina = 100;
+        int schoolreputation = 0;
 };
 
 
@@ -87,8 +86,24 @@ int main() {
     std::cout << "\n";
     std::cout << "\n";
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    std::cout << playerName;
-    
+    if (followTom == "yes") {
+        std::cout << playerName << "Finally, I'm here, now that I know what's around the school I can finally get to class.";
+    }
+    if (followTom == "no") {
+        std::cout << playerName << "Finally, I'm here. Time to go to class.";
+    }
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    system("clear");
+    std::cout << "< - Main Classroom - >";
+    std::cout << "\n";
+    std::cout << "\n";
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    if (followTom == "yes") {
+        std::cout << playerName << ": Teacher, I'm here!";
+
+    }
+    if (followTom == "no") {
+        std::cout << playerName << "Finally, I'm here. Time to go to class.";
+    }
     return 0;
 }
-
