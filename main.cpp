@@ -24,6 +24,7 @@ class Ana {
         int relationship = 0;
 
 };
+
 // Simplifications
 Player plr;
 Ana a;
@@ -85,6 +86,7 @@ int main() {
     std::cout << "< - Hallway - >";
     std::cout << "\n";
     std::cout << "\n";
+    std::this_thread::sleep_for(std::chrono::seconds(1));
     std::cout << playerName;
     
     return 0;
