@@ -3,6 +3,9 @@
 #include <cstdlib>
 #include <chrono>
 #include <thread>
+
+using namespace std;
+
 // Get container, but there is none so do it at home.
 
 // Player Class
@@ -22,6 +25,11 @@ class Ana {
     public:
         int relationship = 0;
 
+};
+
+class MrSmith {
+    public:
+        int relationship = 0;
 };
 
 // Simplifications
@@ -103,7 +111,10 @@ int main() {
 
     }
     if (followTom == "no") {
-        std::cout << playerName << "Finally, I'm here. Time to go to class.";
+        std::cout << playerName << "Teacher, I'm here!";
+        cout << "Mr. Smith: Ah, just on time. Nice to meet you..";
+        cout << playerName << ".\n";
+        cout << "Mr. Smith: Okay, sit down as I will teach the class.";
     }
     return 0;
 }
